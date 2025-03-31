@@ -1,31 +1,30 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/status-production-green.svg" alt="Status: Production">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
-  <img src="https://img.shields.io/badge/version-1.0.0-orange.svg" alt="Version: 1.0.0">
-  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build: Passing">
+  <img src="https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge" alt="Status: Production Ready">
+  <img src="https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge" alt="Version: 2.0.0">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License: MIT">
+  <img src="https://img.shields.io/badge/Build-Passing-success?style=for-the-badge" alt="Build: Passing">
 </div>
+
+<br>
 
 <div align="center">
-  <h1>🤖 AI Call Agent</h1>
-  <p><strong>Intelligent Call Handling System Powered by Twilio & Gemini</strong></p>
-  <br>
+  <h1>🤖 AI CALL AGENT</h1>
+  <h3>Next-Generation Intelligent Call Handling System</h3>
+  <p><em>Revolutionizing customer interactions through AI-powered voice technology</em></p>
 </div>
 
-<p align="center">
-  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-mgtRSKBRQDcH7wH3NHbyT9mS4Dp0A4.png" alt="AI Call Agent" width="800px">
-</p>
+<br>
 
 <div align="center">
   <a href="#-overview">Overview</a> •
   <a href="#-key-features">Key Features</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-technologies">Technologies</a> •
+  <a href="#-system-architecture">Architecture</a> •
+  <a href="#-technology-stack">Technology Stack</a> •
   <a href="#-installation">Installation</a> •
   <a href="#-usage">Usage</a> •
   <a href="#-api-reference">API Reference</a> •
   <a href="#-deployment">Deployment</a> •
-  <a href="#-challenges-and-solutions">Challenges & Solutions</a> •
-  <a href="#-performance-metrics">Performance Metrics</a> •
+  <a href="#-performance">Performance</a> •
   <a href="#-roadmap">Roadmap</a> •
   <a href="#-contributing">Contributing</a> •
   <a href="#-license">License</a>
@@ -38,45 +37,66 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+  - [Introduction](#introduction)
+  - [Problem Statement](#problem-statement)
+  - [Solution](#solution)
+  - [Benefits](#benefits)
 - [Key Features](#-key-features)
-- [Architecture](#-architecture)
-  - [System Components](#system-components)
-  - [Call Flow](#call-flow)
+  - [AI-Driven Call Handling](#ai-driven-call-handling)
+  - [Enhanced Customer Experience](#enhanced-customer-experience)
+  - [Operational Efficiency](#operational-efficiency)
+  - [Advanced Analytics](#advanced-analytics)
+  - [Security & Compliance](#security--compliance)
+- [System Architecture](#-system-architecture)
+  - [High-Level Architecture](#high-level-architecture)
+  - [Component Breakdown](#component-breakdown)
+  - [Call Flow Process](#call-flow-process)
   - [Data Flow](#data-flow)
   - [Integration Points](#integration-points)
-- [Technologies](#-technologies)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
-  - [AI Components](#ai-components)
-  - [Deployment & Infrastructure](#deployment--infrastructure)
+  - [Scalability Design](#scalability-design)
+- [Technology Stack](#-technology-stack)
+  - [Frontend Technologies](#frontend-technologies)
+  - [Backend Technologies](#backend-technologies)
+  - [AI & ML Components](#ai--ml-components)
+  - [Infrastructure & DevOps](#infrastructure--devops)
+  - [Third-Party Services](#third-party-services)
 - [Installation](#-installation)
   - [Prerequisites](#prerequisites)
   - [Environment Setup](#environment-setup)
   - [Configuration](#configuration)
-  - [Local Development](#local-development)
+  - [Development Setup](#development-setup)
+  - [Testing](#testing)
 - [Usage](#-usage)
   - [Admin Dashboard](#admin-dashboard)
   - [Call Management](#call-management)
-  - [Analytics & Reporting](#analytics--reporting)
-  - [User Management](#user-management)
+  - [Analytics Platform](#analytics-platform)
+  - [Integration Examples](#integration-examples)
+  - [Customization Options](#customization-options)
 - [API Reference](#-api-reference)
   - [Authentication](#authentication)
-  - [Call Endpoints](#call-endpoints)
-  - [User Endpoints](#user-endpoints)
-  - [Analytics Endpoints](#analytics-endpoints)
+  - [Call Management API](#call-management-api)
+  - [Analytics API](#analytics-api)
+  - [Configuration API](#configuration-api)
+  - [Webhook Events](#webhook-events)
 - [Deployment](#-deployment)
   - [Docker Deployment](#docker-deployment)
-  - [Cloud Deployment](#cloud-deployment)
-  - [Scaling Considerations](#scaling-considerations)
-- [Challenges and Solutions](#-challenges-and-solutions)
-  - [Technical Challenges](#technical-challenges)
-  - [Implementation Solutions](#implementation-solutions)
-- [Performance Metrics](#-performance-metrics)
-  - [Response Time](#response-time)
-  - [Accuracy Metrics](#accuracy-metrics)
-  - [Scalability Tests](#scalability-tests)
+  - [Kubernetes Deployment](#kubernetes-deployment)
+  - [Cloud Provider Options](#cloud-provider-options)
+  - [Scaling Strategies](#scaling-strategies)
+  - [Monitoring & Alerting](#monitoring--alerting)
+- [Performance](#-performance)
+  - [Benchmarks](#benchmarks)
+  - [Optimization Techniques](#optimization-techniques)
+  - [Case Studies](#case-studies)
 - [Roadmap](#-roadmap)
+  - [Short-term Goals](#short-term-goals)
+  - [Mid-term Vision](#mid-term-vision)
+  - [Long-term Strategy](#long-term-strategy)
 - [Contributing](#-contributing)
+  - [Development Process](#development-process)
+  - [Code Standards](#code-standards)
+  - [Testing Guidelines](#testing-guidelines)
+  - [Documentation](#documentation)
 - [License](#-license)
 - [Acknowledgements](#-acknowledgements)
 
@@ -84,124 +104,54 @@
 
 ## 🔍 Overview
 
-<p align="center">
-  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-NdPVMub6qd4rDV6I6h6WIib1OAx1x6.png" alt="Introduction" width="800px">
-</p>
+### Introduction
 
-The AI Call Agent is a sophisticated system designed to revolutionize customer service through intelligent call handling. By leveraging cutting-edge AI technologies, this system automates customer interactions while maintaining a natural, human-like conversation experience.
+The AI Call Agent is a cutting-edge solution that transforms traditional call center operations through the power of artificial intelligence. By combining advanced speech processing, natural language understanding, and machine learning technologies, our system delivers an intelligent, automated call handling experience that rivals human agents in effectiveness while significantly reducing operational costs.
 
-Our solution integrates several key technologies:
-
-- **Speech-to-Text (STT)**: Converts customer voice input into text for processing
-- **Natural Language Understanding (NLU)**: Powered by Google's Gemini to comprehend customer intent
-- **Text-to-Speech (TTS)**: Uses Smallest.AI to generate natural-sounding responses
-- **VoIP Integration**: Seamlessly connects with Twilio for call handling
-- **Cloud Infrastructure**: Ensures scalability and reliability
-
-This comprehensive system enables businesses to provide 24/7 customer support, reduce operational costs, and enhance the overall customer experience through personalized, efficient interactions.
-
-### Why AI Call Agent?
+### Problem Statement
 
 Traditional call centers face numerous challenges:
 
-- High operational costs
-- Limited availability (business hours only)
-- Inconsistent service quality
-- Difficulty scaling during peak periods
-- High employee turnover
+- **High Operational Costs**: Maintaining a large staff of human agents is expensive
+- **Scalability Issues**: Difficulty handling call volume fluctuations
+- **Inconsistent Service**: Quality varies between agents and shifts
+- **Limited Availability**: Traditional call centers can't economically provide 24/7 service
+- **High Turnover**: Call center positions often experience significant employee churn
+- **Training Overhead**: New agents require extensive training
+- **Limited Analytics**: Difficult to extract actionable insights from calls
 
-Our AI Call Agent addresses these challenges by providing an automated, scalable solution that delivers consistent, high-quality service around the clock while significantly reducing operational expenses.
+These challenges result in suboptimal customer experiences, high operational costs, and missed business opportunities.
 
----
+### Solution
 
-## ✨ Key Features
+The AI Call Agent addresses these challenges through an innovative approach:
 
-<p align="center">
-  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-lSp6QSS0cpymPin3hI84yX9586rv2H.png" alt="Objectives" width="800px">
-</p>
-
-### 🤖 AI-Driven Call Handling
-
-<p align="center">
-  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-hniBKeWjWvxRDQRLqg0jGchNgw1xat.png" alt="Automate call handling" width="800px">
-</p>
-
-- **Real-time Speech Processing**: Converts customer speech to text with high accuracy
-- **Intent Recognition**: Identifies customer needs and requests accurately
-- **Contextual Understanding**: Maintains conversation context for natural interactions
-- **Dynamic Response Generation**: Creates appropriate, human-like responses
-- **Sentiment Analysis**: Detects customer emotions and adjusts responses accordingly
-
-### 🎯 Enhanced Customer Experience
-
-<p align="center">
-  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-eraKahnFNLxz21Z191uMCRlrsmZxrV.png" alt="Improve customer experience" width="800px">
-</p>
-
-- **Natural Conversations**: Provides human-like interactions beyond basic IVR systems
-- **Personalized Interactions**: Tailors responses based on customer history and preferences
-- **Minimal Wait Times**: Handles multiple calls simultaneously without queuing
-- **24/7 Availability**: Offers round-the-clock service without interruption
-- **Consistent Service Quality**: Delivers the same high-quality experience for every call
-
-### 💰 Operational Efficiency
-
-<p align="center">
-  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-KfeenFbUjhaqbjYEPKHiZBtcF6oIdo.png" alt="Reduce operational costs" width="800px">
-</p>
-
-- **Reduced Staffing Costs**: Minimizes the need for human agents
-- **Automated Call Resolution**: Handles common queries without human intervention
-- **Efficient Call Routing**: Directs complex issues to appropriate departments
-- **Scalable Infrastructure**: Handles call volume fluctuations without additional resources
-- **Detailed Analytics**: Provides insights for continuous improvement
-
-### 🔒 Compliance & Security
-
-- **GDPR/CCPA Compliance**: Adheres to data protection regulations
-- **Secure Data Handling**: Encrypts sensitive customer information
-- **Transparent Data Usage**: Clearly informs customers about data collection
-- **Audit Trails**: Maintains detailed records of all interactions
-- **Customizable Retention Policies**: Allows configuration of data retention periods
-
-### 📊 Advanced Analytics
-
-- **Call Volume Metrics**: Tracks call patterns and peak times
-- **Resolution Rate Analysis**: Measures successful call resolution percentages
-- **Sentiment Tracking**: Monitors customer satisfaction trends
-- **Topic Clustering**: Identifies common customer issues
-- **Performance Dashboards**: Visualizes key metrics for business insights
-
----
-
-## 🏗️ Architecture
-
-### System Components
-
-The AI Call Agent architecture consists of several interconnected components that work together to provide a seamless call handling experience:
-
-```mermaid title="High-Level System Architecture" type="diagram"
-graph TB
-    A["Customer Call"] --> B["Twilio VoIP Service"]
-    B --> C["Call Management Service"]
-    C --> D["Speech-to-Text Service"]
-    D --> E["NLU Engine (Gemini)"]
-    E --> F["Response Generation"]
-    F --> G["Text-to-Speech (Smallest.AI)"]
-    G --> H["Call Response"]
+```mermaid title="AI Call Agent Solution Overview" type="diagram"
+graph TD
+    A["Traditional Call Center Challenges"] --> B["AI Call Agent Solution"]
+    B --> C["Speech Processing"]
+    B --> D["Natural Language Understanding"]
+    B --> E["Machine Learning"]
+    B --> F["Cloud Infrastructure"]
     
-    C --> I["Analytics & Logging"]
-    C --> J["Admin Dashboard"]
+    C --> G["Automated Call Handling"]
+    D --> G
+    E --> G
+    F --> G
     
-    K["Database"] --- C
-    K --- I
-    K --- J
+    G --> H["Enhanced Customer Experience"]
+    G --> I["Reduced Operational Costs"]
+    G --> J["Scalable Operations"]
+    G --> K["Consistent Service Quality"]
+    G --> L["24/7 Availability"]
+    G --> M["Advanced Analytics"]
     
-    classDef primary fill:#4f46e5,stroke:#4f46e5,color:white;
-    classDef secondary fill:#8b5cf6,stroke:#8b5cf6,color:white;
-    classDef tertiary fill:#3b82f6,stroke:#3b82f6,color:white;
+    classDef challenge fill:#ff6b6b,stroke:#ff6b6b,color:white;
+    classDef solution fill:#4ecdc4,stroke:#4ecdc4,color:white;
+    classDef technology fill:#1a535c,stroke:#1a535c,color:white;
+    classDef benefit fill:#f7fff7,stroke:#1a535c,color:#1a535c;
     
-    class A,H tertiary;
-    class B,C,D,G primary;
-    class E,F secondary;
-    class I,J,K tertiary;
+    class A challenge;
+    class B solution;
+    class C,D,E,F technology;
+    class G,H,I,J,K,L,M benefit;
